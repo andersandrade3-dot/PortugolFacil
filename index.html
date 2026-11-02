@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portugol Fácil</title>
+  <meta name="description" content="Portugol Fácil — Prática guiada de lógica de programação em Portugol.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <a class="brand" href="#/" aria-label="Portugol Fácil — Início">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <rect x="2" y="3" width="16" height="14" rx="2.5" stroke="currentColor" stroke-width="1.75"/>
+            <path d="M5.5 8L8.5 10.5L5.5 13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.5 13H14.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <b>Portugol Fácil</b>
+      </a>
+
+      <nav class="topnav" aria-label="Navegação principal">
+        <a href="#/" id="navHome">Missões</a>
+        <a href="#/lab" id="navLab">Laboratório</a>
+        <a href="#/painel" id="navPainel">Progresso</a>
+        <a href="#/prof" id="navProf">Professor</a>
+      </nav>
+
+      <div class="hud">
+        <span class="prog-pill" id="topProgress" title="Exercícios concluídos">0 de 0</span>
+        <button class="icon-btn" id="btnTema" title="Alternar tema claro/escuro" aria-label="Alternar tema"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <div id="toasts" aria-live="polite"></div>
+  <div id="modal" class="modal-wrap" hidden></div>
+
+  <script src="js/portugol.js?v=3"></script>
+  <script src="js/editor.js?v=3"></script>
+  <script src="js/content.js?v=3"></script>
+  <script src="js/grader.js?v=3"></script>
+  <script src="js/app.js?v=3"></script>
+</body>
+</html>
